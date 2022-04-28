@@ -5,7 +5,19 @@ import { DeviceModule } from './device/device.module';
 import { SequelizeModule } from '@nestjs/sequelize';
 
 @Module({
-  imports: [DeviceModule],
+  imports: [
+    SequelizeModule.forRoot({
+      dialect: 'postgres',
+      host: 'localhost',
+      port: 5432,
+      username: 'postgres',
+      password: 'password',
+      database: 'library',
+      autoLoadModels: true,
+      synchronize: true,
+    }),
+    DeviceModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
