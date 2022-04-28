@@ -12,7 +12,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
       port: 5432,
       username: 'postgres',
       password: 'password',
-      database: 'library',
+      database: 'device',
       autoLoadModels: true,
       synchronize: true,
     }),
