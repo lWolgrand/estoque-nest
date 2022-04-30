@@ -5,7 +5,7 @@ import { DeviceModule } from "./device/device.module";
 import { SequelizeModule } from "@nestjs/sequelize";
 import { DeviceController } from "./device/device.controller";
 import { DeviceService } from "./device/device.service";
-import { databaseProviders } from "database/database.providers";
+import { databaseProviders } from "src/database/database.providers";
 
 @Module({
   imports: [
