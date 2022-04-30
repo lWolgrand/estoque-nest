@@ -22,8 +22,7 @@ import { databaseProviders } from "database/database.providers";
     DeviceModule,
   ],
   controllers: [AppController, DeviceController],
-  providers: [AppService, DeviceService, databaseProviders],
-  exports: [SequelizeModule, databaseProviders],
-
+  providers: [AppService, DeviceService, ...databaseProviders],
+  exports: [SequelizeModule, ...databaseProviders],
 })
 export class AppModule { }
