@@ -1,7 +1,7 @@
-import { Device } from "../entities/device.entity";
+import { Device } from "./entities/device.entity";
 export const deviceProviders = [
   {
-    provide: " DeviceRepository",
+    provide: "DeviceRepository",
     useValue: Device,
   },
 ];
