@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { Sequelize } from 'sequelize-typescript';
-import { Device } from '../src/device/entities/device.entity';
+import { Device } from '../src/devices/entities/device.entity';
 export const databaseProviders = [
   {
     provide: 'SEQUELIZE',
