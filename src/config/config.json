@@ -2,15 +2,15 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "device",
+    "database": "devices",
     "host": "localhost",
     "dialect": "postgres",
     "port": 3000
   },
   "test": {
-   " username": "root",
+    "username": "root",
     "password": null,
-    "database": "device",
+    "database": "devices",
     "host": "localhost",
     "dialect": "postgres",
     "port": 3000
@@ -18,7 +18,7 @@
   "production": {
     "username": "root",
     "password": null,
-    "database": "device",
+    "database": "devices",
     "host": "localhost",
     "dialect": "postgres",
     "port": 3000
