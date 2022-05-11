@@ -34,15 +34,27 @@ export class Device extends Model<Device> {
   })
   source: string;
 
-  @ForeignKey(() => Status)
-  @HasOne(() => Status, 'deviceId')
+  @ForeignKey(() => Status)  
   @Column({
-    type: DataType.NUMBER,
+    type: DataType.INTEGER,
     allowNull: false,
   })
   statusId: number;
-
   
+  @BelongsTo(() => Status)
+  status: string;
+
+  @HasOne(() => Status)
+  statuss: Status;
+
+  @Column({
+    type: DataType.STRING,
+    allowNull: false,
+  })
+  enabled: boolean;
+  
+
+
 
 
 }
