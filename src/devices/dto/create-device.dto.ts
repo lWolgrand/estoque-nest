@@ -1,6 +1,6 @@
 export class CreateDeviceDto {
-  "name": string;
-  "description": string;
-  "status": string;
-  "source": number;
-}
+    name: string;
+    description: string;
+    status: string;
+    source: string;
+  }

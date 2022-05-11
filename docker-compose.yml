@@ -1,23 +1,17 @@
 version: "3.7"
 
 services:
-<<<<<<< HEAD
-
-=======
->>>>>>> e961774bcf4ced03f48e4e32ce70cac322bc64e3
   db:
     image: postgres
     restart: always
     environment:
-<<<<<<< HEAD
-      POSTGRES_HOST: localhost
       POSTGRES_PASSWORD: root
       POSTGRES_USER: root
-      POSTGRES_DB: sequelize
+      POSTGRES_DB: device
     ports:
       - 5432:5432
-    volumes:
-      - pgdata:/var/lib/postgresql/data
+    # volumes:
+    #   - pgdata:/var/lib/postgresql/data
   adminer:
     image: adminer
     restart: always
@@ -27,14 +21,5 @@ services:
       - db
     links:
       - db
-volumes: 
-  pgdata:
-=======
-      POSTGRES_PASSWORD: root
-      POSTGRES_USER: root
-      POSTGRES_DB: devices
-    ports:
-      - 5432:5432
-    volumes:
-      - ./database/data:/var/lib/postgresql/data
->>>>>>> e961774bcf4ced03f48e4e32ce70cac322bc64e3
+# volumes: 
+#   pgdata:

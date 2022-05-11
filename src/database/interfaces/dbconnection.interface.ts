@@ -1,7 +1,7 @@
 export interface IdbConfigAttr {
   host?: string;
   port?: string;
-  username?: string;
+  user?: string;
   password?: string;
   database?: string;
   dialect?: string;

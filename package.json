@@ -27,18 +27,13 @@
     "@nestjs/core": "^8.0.0",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^8.0.0",
-<<<<<<< HEAD
     "@nestjs/sequelize": "^8.0.0",
     "express": "^4.18.1",
-=======
-    "dotenv": "^16.0.0",
->>>>>>> e961774bcf4ced03f48e4e32ce70cac322bc64e3
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "sequelize": "^6.19.0",
     "sequelize-typescript": "^2.1.3"
   },
   "devDependencies": {

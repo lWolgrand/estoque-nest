@@ -1,7 +1,9 @@
-import { Table, Column, Model, DataType } from "sequelize-typescript";
+import { Table, Column, Model, DataType, ForeignKey, BelongsTo, HasOne } from "sequelize-typescript";
+import { Status } from "./status.entity";
 
 @Table
 export class Device extends Model<Device> {
+  
   @Column({
     type: DataType.STRING,
     allowNull: false,
@@ -24,17 +26,23 @@ export class Device extends Model<Device> {
     type: DataType.DATE,
     allowNull: false,
   })
-  updatedAt: Date;
+  updatedAt: Date;  
 
   @Column({
     type: DataType.STRING,
-    allowNull: false,
+    allowNull: false,    
   })
-  status: string;
+  source: string;
 
+  @ForeignKey(() => Status)
+  @HasOne(() => Status, 'deviceId')
   @Column({
-    type: DataType.INTEGER,
+    type: DataType.NUMBER,
     allowNull: false,
   })
-  source: number;
+  statusId: number;
+
+  
+
+
 }
