@@ -1,9 +1,7 @@
 import { Sequelize } from "sequelize-typescript";
-import { dbConfig } from "./database.config";
 import { Device } from "../devices/entities/device.entity";
-import * as dotenv from "dotenv";
+import { Status } from "../devices/entities/status.entity";
 
-dotenv.config();
 
 export const dbproviders = [
   {

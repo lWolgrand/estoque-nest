@@ -1,7 +1,9 @@
-import { Table, Column, Model, DataType } from "sequelize-typescript";
+import { Table, Column, Model, DataType, ForeignKey, BelongsTo, HasOne } from "sequelize-typescript";
+import { Status } from "./status.entity";
 
 @Table
 export class Device extends Model<Device> {
+  
   @Column({
     type: DataType.STRING,
     allowNull: false,
@@ -24,14 +26,25 @@ export class Device extends Model<Device> {
     type: DataType.DATE,
     allowNull: false,
   })
-  updatedAt: Date;
+  updatedAt: Date;  
 
   @Column({
     type: DataType.STRING,
+    allowNull: false,    
+  })
+  source: string;
+
+  @ForeignKey(() => Status)  
+  @Column({
+    type: DataType.INTEGER,
     allowNull: false,
   })
+  statusId: number;
+  
+  @BelongsTo(() => Status)
   status: string;
 
+<<<<<<< HEAD
   
   @Column({
     type: DataType.STRING,
@@ -51,11 +64,25 @@ export class Device extends Model<Device> {
   })
   invoiceOut: string;
   
+=======
+  @HasOne(() => Status)
+  statuss: Status;
+
+>>>>>>> 91aabda7f0840c07cfe7820f1f1a304a75bbecb7
   @Column({
-    type: DataType.INTEGER,
+    type: DataType.STRING,
     allowNull: false,
   })
+<<<<<<< HEAD
   source: number;
   
   
+=======
+  enabled: boolean;
+  
+
+
+
+
+>>>>>>> 91aabda7f0840c07cfe7820f1f1a304a75bbecb7
 }
