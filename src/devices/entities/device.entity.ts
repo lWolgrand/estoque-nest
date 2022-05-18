@@ -32,9 +32,30 @@ export class Device extends Model<Device> {
   })
   status: string;
 
+  
+  @Column({
+    type: DataType.STRING,
+    allowNull: false,
+  })
+  category: string;
+  
+  @Column({
+    type: DataType.STRING,
+    allowNull: false,
+  })
+  invoiceIn: string;
+  
+  @Column({
+    type: DataType.STRING,
+    allowNull: false,
+  })
+  invoiceOut: string;
+  
   @Column({
     type: DataType.INTEGER,
     allowNull: false,
   })
   source: number;
+  
+  
 }
