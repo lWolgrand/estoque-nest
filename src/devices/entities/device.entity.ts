@@ -1,88 +1,85 @@
-import { Table, Column, Model, DataType, ForeignKey, BelongsTo, HasOne } from "sequelize-typescript";
+import { Table, Column, Model, DataType, ForeignKey, BelongsTo, AutoIncrement, PrimaryKey } from "sequelize-typescript";
 import { Status } from "./status.entity";
 
 @Table
 export class Device extends Model<Device> {
+
+  @PrimaryKey
+  @AutoIncrement
+  @Column({
+      allowNull: false,
+  })
+  id: number;
   
   @Column({
     type: DataType.STRING,
     allowNull: false,
   })
-  name: string;
+  device_name: string;
+
+  @Column({
+    type: DataType.STRING,
+    allowNull: true,
+  })
+  serial_number: string;
 
   @Column({
     type: DataType.STRING,
     allowNull: false,
   })
-  description: string;
-
-  @Column({
-    type: DataType.DATE,
-    allowNull: false,
-  })
-  createdAt: Date;
-
-  @Column({
-    type: DataType.DATE,
-    allowNull: false,
-  })
-  updatedAt: Date;  
+  device_description: string;
 
   @Column({
     type: DataType.STRING,
     allowNull: false,    
   })
-  source: string;
+  id_source: string;
 
   @ForeignKey(() => Status)  
   @Column({
     type: DataType.INTEGER,
     allowNull: false,
   })
-  statusId: number;
+  id_status: number;
   
   @BelongsTo(() => Status)
   status: string;
 
-<<<<<<< HEAD
   
   @Column({
     type: DataType.STRING,
     allowNull: false,
   })
-  category: string;
+  id_category: string;
   
   @Column({
     type: DataType.STRING,
     allowNull: false,
   })
-  invoiceIn: string;
+  id_invoiceIn: string;
   
   @Column({
     type: DataType.STRING,
     allowNull: false,
   })
-  invoiceOut: string;
+  id_invoiceOut: string;
   
-=======
-  @HasOne(() => Status)
-  statuss: Status;
-
->>>>>>> 91aabda7f0840c07cfe7820f1f1a304a75bbecb7
   @Column({
-    type: DataType.STRING,
+    type: DataType.BOOLEAN,
     allowNull: false,
   })
-<<<<<<< HEAD
-  source: number;
-  
-  
-=======
   enabled: boolean;
   
+  @Column({
+    type: DataType.DATE,
+    allowNull: true,
+  })
+  createdAt: Date;
 
+  @Column({
+    type: DataType.DATE,
+    allowNull: true,
+  })
+  updatedAt: Date;  
 
-
-
->>>>>>> 91aabda7f0840c07cfe7820f1f1a304a75bbecb7
 }
