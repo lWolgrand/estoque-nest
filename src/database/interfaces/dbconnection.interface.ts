@@ -4,7 +4,7 @@ export interface IdbConfigAttr {
   user?: string;
   password?: string;
   database?: string;
-  dialect?: string;
+  dialect?: number;
 }
 
 export interface IdbConfig {
