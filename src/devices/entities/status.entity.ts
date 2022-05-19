@@ -1,30 +1,31 @@
-import { Table, Column, Model, DataType, BelongsTo } from "sequelize-typescript";
-import { Device } from "./device.entity";
+import { Table, Column, Model, DataType, PrimaryKey, AutoIncrement } from "sequelize-typescript";
 
 @Table 
 export class Status extends Model<Status> {
+
+    @PrimaryKey
+    @AutoIncrement
+    @Column({
+        allowNull: false,
+    })
+    id: number;
    
     @Column({
-        type: DataType.STRING,
+        type: DataType.ENUM,
+        values: ['Ativo','Emprestado','Manutenção','Offline'],
         allowNull: false,
     })
     name: string;
-    
-    @Column({
-        type: DataType.STRING,
-        allowNull: false,
-    })
-    description: string;
 
     @Column({
         type: DataType.DATE,
-        allowNull: false,
+        allowNull: true,
     })
     createdAt: Date;
 
     @Column({
         type: DataType.DATE,
-        allowNull: false,
+        allowNull: true,
     })
     updatedAt: Date;
 
