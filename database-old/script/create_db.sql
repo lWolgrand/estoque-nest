@@ -111,7 +111,7 @@ insert into categories(id, name) values
 (3, 'Desktop'),
 (4, 'Teclado'),
 (5, 'Mouse'),
-(6, 'Monitor'),
+(6, 'Monitor'),ompose 
 (7, 'Estabilizador'),
 (8, 'Chromebook'),
 (9, 'Peça-hardware') ON CONFLICT DO NOTHING;

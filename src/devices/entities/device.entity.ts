@@ -1,4 +1,6 @@
 import { Table, Column, Model, DataType, ForeignKey, BelongsTo, AutoIncrement, PrimaryKey } from "sequelize-typescript";
+import { Category } from "./category.entity";
+import { Source } from "./source.entity";
 import { Status } from "./status.entity";
 
 @Table
@@ -21,13 +23,7 @@ export class Device extends Model<Device> {
     allowNull: false,
   })
   device_description: string;
-
-  @Column({
-    type: DataType.STRING,
-    allowNull: false,    
-  })
-  id_source: string;
-
+  
   @ForeignKey(() => Status)  
   @Column({
     type: DataType.INTEGER,
@@ -37,13 +33,26 @@ export class Device extends Model<Device> {
   
   @BelongsTo(() => Status)
   status: string;
-
   
+  @ForeignKey(() => Source)
   @Column({
-    type: DataType.STRING,
+    type: DataType.INTEGER,
+    allowNull: false,    
+  })
+  id_source: number;
+
+  @BelongsTo(() => Source)
+  source: string;
+
+  @ForeignKey(() => Category)
+  @Column({
+    type: DataType.INTEGER,
     allowNull: false,
   })
-  id_category: string;
+  id_category: number;
+
+  @BelongsTo(() => Category)
+  category: string;
   
   @Column({
     type: DataType.STRING,

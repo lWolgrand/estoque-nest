@@ -6,15 +6,15 @@ insert into "Statuses"(id, name) values
 (4, 'Offline') ON CONFLICT DO NOTHING;
 
 insert into categories(id, name) values 
-(1, 'Móveis'),
-(2, 'Notebook'),
-(3, 'Desktop'),
-(4, 'Teclado'),
-(5, 'Mouse'),
-(6, 'Monitor'),
-(7, 'Estabilizador'),
-(8, 'Chromebook'),
-(9, 'Peça-hardware') ON CONFLICT DO NOTHING;
+(1, 'Móveis',),
+(2, 'Noteboo',),
+(3, 'Deskto',),
+(4, 'Teclad',),
+(5, 'Mous',),
+(6, 'Monito',),
+(7, 'Estabilizado',),
+(8, 'Chromeboo',),
+(9, 'Peçahardwar',) ON CONFLICT DO NOTHING;
 
 insert into sources(id, name) values 
 (1, 'Doação'),
