@@ -5,6 +5,7 @@ export class CreateDeviceDto {
   id_source : number;
   id_status : number;
   id_category : number;
-  id_invoiceIn : string;
-  id_invoiceOut : string;
+  id_invoiceIn : number;
+  id_invoiceOut : number;
+  id_location : number;
   }

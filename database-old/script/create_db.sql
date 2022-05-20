@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS DeviceStatus (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     enable BOOLEAN DEFAULT TRUE
-);
+); 
 
 CREATE TABLE IF NOT EXISTS Categories (
     id SERIAL PRIMARY KEY,
@@ -111,7 +111,7 @@ insert into categories(id, name) values
 (3, 'Desktop'),
 (4, 'Teclado'),
 (5, 'Mouse'),
-(6, 'Monitor'),ompose 
+(6, 'Monitor'),
 (7, 'Estabilizador'),
 (8, 'Chromebook'),
 (9, 'Peça-hardware') ON CONFLICT DO NOTHING;

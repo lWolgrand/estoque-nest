@@ -12,7 +12,7 @@ export class Source extends Model<Source> {
    
     @Column({
         type: DataType.ENUM,
-        values: ['Doação','Compra','Alugado','Empréstimo'],
+        values: ['Doação','Compra','Alugado', 'Emprestado'],
         allowNull: false,
     })
     name: string;

@@ -1,22 +1,24 @@
 import { Table, Column, Model, DataType, ForeignKey, BelongsTo, AutoIncrement, PrimaryKey } from "sequelize-typescript";
-import { Category } from "./category.entity";
-import { Source } from "./source.entity";
 import { Status } from "./status.entity";
+import { Category } from "./category.entity";
+import { Invoice } from "./invoice.entity";
+import { Source } from "./source.entity";
+import { Location } from "./location.entity";
 
 @Table
 export class Device extends Model<Device> {
   
   @Column({
     type: DataType.STRING,
-    allowNull: false,
-  })
-  device_name: string;
-
-  @Column({
-    type: DataType.STRING,
     allowNull: true,
   })
   serial_number: string;
+  
+  @Column({
+    type: DataType.STRING,
+    allowNull: false,
+  })
+  device_name: string;
 
   @Column({
     type: DataType.STRING,
@@ -34,6 +36,36 @@ export class Device extends Model<Device> {
   @BelongsTo(() => Status)
   status: string;
   
+  @ForeignKey(() => Category)
+  @Column({
+    type: DataType.INTEGER,
+    allowNull: false,
+  })
+  id_category: number;
+
+  @BelongsTo(() => Category)
+  category: string;
+
+  @ForeignKey(() => Invoice)
+  @Column({
+    type: DataType.INTEGER,
+    allowNull: false,
+  })
+  id_invoiceIn: number;
+
+  @BelongsTo(() => Invoice)
+  invoiceIn: string;
+  
+  @ForeignKey(() => Invoice)
+  @Column({
+    type: DataType.INTEGER,
+    allowNull: false,
+  })
+  id_invoiceOut: number;
+
+  @BelongsTo(() => Invoice)
+  invoiceOut: string;
+
   @ForeignKey(() => Source)
   @Column({
     type: DataType.INTEGER,
@@ -44,27 +76,16 @@ export class Device extends Model<Device> {
   @BelongsTo(() => Source)
   source: string;
 
-  @ForeignKey(() => Category)
+  @ForeignKey(() => Location)
   @Column({
     type: DataType.INTEGER,
-    allowNull: false,
+    allowNull: true,
   })
-  id_category: number;
+  id_location:number ;
 
-  @BelongsTo(() => Category)
-  category: string;
-  
-  @Column({
-    type: DataType.STRING,
-    allowNull: false,
-  })
-  id_invoiceIn: string;
-  
-  @Column({
-    type: DataType.STRING,
-    allowNull: false,
-  })
-  id_invoiceOut: string;
+  @BelongsTo(() => Location)
+  location: string;
+
   
   @Column({
     type: DataType.BOOLEAN,
