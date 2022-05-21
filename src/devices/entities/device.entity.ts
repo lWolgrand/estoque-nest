@@ -1,4 +1,4 @@
-import { Table, Column, Model, DataType, ForeignKey, BelongsTo, AutoIncrement, PrimaryKey } from "sequelize-typescript";
+import { Table, Column, Model, DataType, ForeignKey, BelongsTo, AutoIncrement, PrimaryKey, Default } from "sequelize-typescript";
 import { Status } from "./status.entity";
 import { Category } from "./category.entity";
 import { Invoice } from "./invoice.entity";
@@ -34,7 +34,7 @@ export class Device extends Model<Device> {
   id_status: number;
   
   @BelongsTo(() => Status)
-  status: string;
+  status: number;
   
   @ForeignKey(() => Category)
   @Column({
@@ -49,17 +49,17 @@ export class Device extends Model<Device> {
   @ForeignKey(() => Invoice)
   @Column({
     type: DataType.INTEGER,
-    allowNull: false,
+    allowNull: true,
   })
   id_invoiceIn: number;
 
   @BelongsTo(() => Invoice)
-  invoiceIn: string;
+  invoice: string;
   
   @ForeignKey(() => Invoice)
   @Column({
     type: DataType.INTEGER,
-    allowNull: false,
+    allowNull: true,
   })
   id_invoiceOut: number;
 
@@ -81,12 +81,12 @@ export class Device extends Model<Device> {
     type: DataType.INTEGER,
     allowNull: true,
   })
-  id_location:number ;
+  id_location: number ;
 
   @BelongsTo(() => Location)
-  location: string;
+  location: number;
 
-  
+  @Default(true)
   @Column({
     type: DataType.BOOLEAN,
     allowNull: true,

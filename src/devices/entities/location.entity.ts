@@ -1,14 +1,19 @@
 import { Table, Column, Model, DataType, PrimaryKey, AutoIncrement, ForeignKey, BelongsTo } from "sequelize-typescript";
+import { Device } from "./device.entity";
 
 @Table 
 export class Location extends Model<Location> {
 
-    @PrimaryKey
-    @AutoIncrement
+    @ForeignKey(() => Device)
     @Column({
         allowNull: false,
     })
-    id: number;   
+    id_device: number;  
+    
+    @BelongsTo(() => Device)
+    device: Device;
+
+
 
     @Column({
         type: DataType.STRING,
