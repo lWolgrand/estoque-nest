@@ -4,17 +4,7 @@ import { Device } from "./device.entity";
 @Table 
 export class Location extends Model<Location> {
 
-    @ForeignKey(() => Device)
-    @Column({
-        allowNull: false,
-    })
-    id_device: number;  
     
-    @BelongsTo(() => Device)
-    device: Device;
-
-
-
     @Column({
         type: DataType.STRING,
         allowNull: false,
