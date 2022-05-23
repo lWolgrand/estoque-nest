@@ -1,5 +1,3 @@
-import { Dialect } from "sequelize/types";
-
 export interface IdbConfigAttr {
   host?: string;
   port?: number;

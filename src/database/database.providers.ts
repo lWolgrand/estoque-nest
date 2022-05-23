@@ -7,13 +7,19 @@ import { Status } from "../devices/entities/status.entity";
 import { Location } from "src/devices/entities/location.entity";
 import { dbConfig } from "./database.config";
 
-
 export const dbproviders = [
   {
     provide: "SEQUELIZE",
     useFactory: async () => {
       const sequelize = new Sequelize(dbConfig.development as SequelizeOptions);
-      sequelize.addModels([Device,Status,Source,Category,Invoice, Location]);
+      sequelize.addModels([
+        Device,
+        Status,
+        Source,
+        Category,
+        Invoice,
+        Location,
+      ]);
       await sequelize.sync();
       return sequelize;
     },

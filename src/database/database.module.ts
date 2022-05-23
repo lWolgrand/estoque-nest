@@ -1,6 +1,6 @@
-import { Module } from '@nestjs/common';
-import { ConfigModule } from '@nestjs/config';
-import { dbproviders } from './database.providers';
+import { Module } from "@nestjs/common";
+import { ConfigModule } from "@nestjs/config";
+import { dbproviders } from "./database.providers";
 
 @Module({
   imports: [
@@ -11,4 +11,4 @@ import { dbproviders } from './database.providers';
   providers: [...dbproviders],
   exports: [...dbproviders],
 })
-export class DatabaseModule { }
+export class DatabaseModule {}

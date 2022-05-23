@@ -1,4 +1,12 @@
-import { Table, Column, Model, DataType, ForeignKey, BelongsTo, AutoIncrement, PrimaryKey, Default } from "sequelize-typescript";
+import {
+  Table,
+  Column,
+  Model,
+  DataType,
+  ForeignKey,
+  BelongsTo,
+  Default,
+} from "sequelize-typescript";
 import { Status } from "./status.entity";
 import { Category } from "./category.entity";
 import { Invoice } from "./invoice.entity";
@@ -7,13 +15,12 @@ import { Location } from "./location.entity";
 
 @Table
 export class Device extends Model<Device> {
-  
   @Column({
     type: DataType.STRING,
     allowNull: true,
   })
   serial_number: string;
-  
+
   @Column({
     type: DataType.STRING,
     allowNull: false,
@@ -25,17 +32,17 @@ export class Device extends Model<Device> {
     allowNull: false,
   })
   device_description: string;
-  
-  @ForeignKey(() => Status)  
+
+  @ForeignKey(() => Status)
   @Column({
     type: DataType.INTEGER,
     allowNull: false,
   })
   id_status: number;
-  
+
   @BelongsTo(() => Status)
   status: number;
-  
+
   @ForeignKey(() => Category)
   @Column({
     type: DataType.INTEGER,
@@ -55,7 +62,7 @@ export class Device extends Model<Device> {
 
   @BelongsTo(() => Invoice)
   invoice: string;
-  
+
   @ForeignKey(() => Invoice)
   @Column({
     type: DataType.INTEGER,
@@ -69,7 +76,7 @@ export class Device extends Model<Device> {
   @ForeignKey(() => Source)
   @Column({
     type: DataType.INTEGER,
-    allowNull: false,    
+    allowNull: false,
   })
   id_source: number;
 
@@ -81,7 +88,7 @@ export class Device extends Model<Device> {
     type: DataType.INTEGER,
     allowNull: true,
   })
-  id_location: number ;
+  id_location: number;
 
   @BelongsTo(() => Location)
   location: number;
@@ -92,7 +99,7 @@ export class Device extends Model<Device> {
     allowNull: true,
   })
   enabled: boolean;
-  
+
   @Column({
     type: DataType.DATE,
     allowNull: true,
@@ -103,6 +110,5 @@ export class Device extends Model<Device> {
     type: DataType.DATE,
     allowNull: true,
   })
-  updatedAt: Date;  
-
+  updatedAt: Date;
 }
