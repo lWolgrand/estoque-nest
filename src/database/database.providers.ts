@@ -6,6 +6,7 @@ import { Device } from "../devices/entities/device.entity";
 import { Status } from "../devices/entities/status.entity";
 import { Location } from "src/devices/entities/location.entity";
 import { dbConfig } from "./database.config";
+import { User } from "src/user/entities/user.entity";
 
 export const dbproviders = [
   {
@@ -19,6 +20,7 @@ export const dbproviders = [
         Category,
         Invoice,
         Location,
+        User
       ]);
       await sequelize.sync();
       return sequelize;
