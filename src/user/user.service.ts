@@ -18,12 +18,11 @@ export class UserService {
    
   }
 
-
   findAll() {
-    return this.userRepository.user.findMany();
+    return this.userRepository.findAll();
   }
 
   findByEmail(email: string) {
-    return this.userRepository.user.findUnique({ where: { email } });
+    return this.userRepository.findOne({ where: { email } });
   }
 } // UserService

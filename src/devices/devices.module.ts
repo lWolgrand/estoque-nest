@@ -7,9 +7,10 @@ import { locationProviders } from "./location.providers";
 import { invoiceProviders } from "./invoice.providers";
 import { APP_GUARD } from "@nestjs/core";
 import { JwtAuthGuard } from "src/auth/guards/jwt-auth.guard";
+import { AuthModule } from "src/auth/auth.module";
 
 @Module({
-  imports: [DatabaseModule],
+  imports: [DatabaseModule, AuthModule],
   controllers: [DevicesController],
   providers: [
     DevicesService,
