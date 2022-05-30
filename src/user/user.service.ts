@@ -1,5 +1,4 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { Sequelize } from 'sequelize-typescript';
 import * as bcrypt from 'bcrypt';
 import { CreateUserDto } from './dto/create-user.dto';
 import { User } from './entities/user.entity';
