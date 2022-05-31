@@ -23,18 +23,4 @@ export class Source extends Model<Source> {
     allowNull: false,
   })
   name: string;
-
-  // @Default(Date.now())
-  // @Column({
-  //   type: DataType.DATE,
-  //   allowNull: true,
-  // })
-  // createdAt: Date;
-
-  // @Default(Date.now())
-  // @Column({
-  //   type: DataType.DATE,
-  //   allowNull: true,
-  // })
-  // updatedAt: Date;
 }

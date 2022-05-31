@@ -12,7 +12,10 @@ export const dbproviders = [
   {
     provide: "SEQUELIZE",
     useFactory: async () => {
-      const sequelize = new Sequelize(dbConfig.development as SequelizeOptions);
+      const sequelize = new Sequelize({...dbConfig.development, define: {
+        freezeTableName: true,
+        timestamps: false
+      }} as SequelizeOptions);
       sequelize.addModels([
         Device,
         Status,
