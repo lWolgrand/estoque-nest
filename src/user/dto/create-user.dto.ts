@@ -16,6 +16,5 @@ export class CreateUserDto {
      * Campo obrigatorio..
      * @exemple: "123456"
      */
-    password: string;
-    
+    password: string;    
 }
