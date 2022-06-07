@@ -57,12 +57,14 @@ export class CreateDeviceDto {
   id_invoiceOut?: number;
 
   /**
-   * 
+   * Aqui vamos utilizar para que quando o usuario cadastrar um dispositivo, ele possa cadastrar um local onde ele esta.
+   * Campo nao obrigatorio.
+   * @exemple: "Bob Burnquist"
    */
   id_location?: number;
-  
+
   /**
-  * 
+  * Utilizando o enable para ativar ou desativar o dispositivo.
   */
   enabled?: boolean;
 }
