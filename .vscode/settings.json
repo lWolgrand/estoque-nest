@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": false
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "estoque-banco",
+            "connectString": "postgres://zcewfyppgfrxwa:74a79a024b9a7cca4554921d2d777fa21cc70a052a9540d193fbc3e631717421@ec2-3-209-124-113.compute-1.amazonaws.com:5432/d1cbljoemkl0vh"
+        }
+    ]
+}
