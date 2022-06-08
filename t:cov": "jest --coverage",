@@ -1,0 +1,379 @@
+[33mcommit 1df850f2afe255bd627997eac7256c6fee7f5721[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue Jun 7 19:27:52 2022 -0300
+
+    fizing bugs
+
+[33mcommit 2be61b39d2c49bbc8dce9b0b2d7dd34962edb64f[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue Jun 7 19:16:03 2022 -0300
+
+    Resolvendo Json
+
+[33mcommit 42ff9a2832ce0cda611339616448fbd22605acca[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue Jun 7 19:05:41 2022 -0300
+
+    Resolvendo erro no json
+
+[33mcommit 56438f556162870fc76976ced6ced3db0e9e9247[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue Jun 7 18:51:39 2022 -0300
+
+    Adicionando meu postbuild script
+
+[33mcommit 88aaddc351529b0c59363a7e0310ccf5f889f5a3[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue Jun 7 18:45:14 2022 -0300
+
+    Finalizando swagger e iniciando o Procfile para fazer deploy no heroku
+
+[33mcommit 9d5707b0d76a25ec794c5781d4dbbb4e307b8b49[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue Jun 7 18:17:12 2022 -0300
+
+    Fechando swagger user dto
+
+[33mcommit 35955e2014e11130e3e0cd17d32df22c4cc2dab3[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue Jun 7 18:11:22 2022 -0300
+
+    Finalizando swagger para deploy.
+
+[33mcommit 8a13457ec77209d40deed719d7a11e54c93740d4[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue Jun 7 18:09:45 2022 -0300
+
+    atualizando o swagger e meus decoratos para formato de comentario e para ter uma melhor performance.
+
+[33mcommit 5de824d26f4ec709ef3d56f60a0f89597715fe68[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue May 31 21:14:23 2022 -0300
+
+    Modificando meu controller de auth e minha rota para tentar entender poruqe nao posso enviar um body no swagger. Adicionando swagger na main e alterando titulo e descriçao. Adicionando tambem decorator de Api
+
+[33mcommit 733c544da94b120a0912cdec71097dff449fb8a1[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue May 31 20:18:43 2022 -0300
+
+    Iniciando documentaçao utilizando o Swagger
+
+[33mcommit 04b719ed7eed80f71fb468be516bc564a9b89b8c[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 21:02:13 2022 -0300
+
+    Configurando pluralizaçao e modelo. Testando rotas tambem.
+
+[33mcommit c74df4e393f115384079ef53ff9798c574648707[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 19:21:25 2022 -0300
+
+    Terminando configuraç~ao de login e usando token gerado para realizar request
+
+[33mcommit d8c29a1b1ab5bc3c14c5f3575454ea4f83a70e0e[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 18:00:35 2022 -0300
+
+    aplicaç~ao com erro, dando unauthorized na requisiçao de login usando post.Aparentemente nao esta gerando o token para atravessar o guardiao
+
+[33mcommit 57bdee0a32882fc2a86bc449c08aa38f270d91b5[m
+Merge: b729eda 8b828e9
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 17:57:31 2022 -0300
+
+    aplicaç~ao com erro, dando unauthorized na requisiçao de login usando post.Aparentemente nao esta gerando o token para atravessar o guardiao
+
+[33mcommit b729edaa037dfe12a35f10074f12c9e81f52c770[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 17:55:45 2022 -0300
+
+    aplicaç~ao com erro, dando unauthorized na requisiçao de login usando post.Aparentemente nao esta gerando o token para atravessar o guardiao
+
+[33mcommit c4c808f91421d5d884db567f778fdf4a517e6ee1[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 16:25:24 2022 -0300
+
+    Adicionando APP_GUARD e JWT no modulo do device
+
+[33mcommit 165277e5423ab0fcd3b34c64d22da7a244712185[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 16:23:25 2022 -0300
+
+    Terminando a arquitetura e verificando os erros de login
+
+[33mcommit ce9653660d0b447754c7bdc98f7f23957d72619f[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 16:17:43 2022 -0300
+
+    Configurando a inicializaçao do app para iniciar na tela de login
+
+[33mcommit e8ed95d243876b722ce1849cf059fbd867fd83b6[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 16:03:02 2022 -0300
+
+    Finalizando decoratos e iniciando as classes modelos de AuthRequest, LoginRequest, UserFrom, Payload e UserToken..
+
+[33mcommit 22d0033d021cd4d2e8de386117d776eb1a592d49[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 16:00:52 2022 -0300
+
+    Iniciando criaç~ao de decorators
+
+[33mcommit 26085df9dc171544c10fbdd27c1233a1dbcf2355[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 15:59:21 2022 -0300
+
+    Configurando tabela no banco e inicializando junto com as outras.
+
+[33mcommit 6dd9b4fcf36b23bb34271fd064605a1f9f0b7872[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 15:37:53 2022 -0300
+
+    Modulo de user criado. Implementaçao de controller, modulo, sercices e providers.
+
+[33mcommit 95b570fd67d23ef02e423ed12e5951d0a2464ee2[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 14:47:52 2022 -0300
+
+    Iniciando arquitetura de autenticaçao
+
+[33mcommit 886f7f5b14a07ba7f5e80fd5e70f1410ea1d57f9[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 30 14:47:12 2022 -0300
+
+    Iniciando implementaçao de autenticaçao no login depois de estudos sobre
+
+[33mcommit 8b828e9e048e708fb5e01620ff3877ba9795a480[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Wed May 25 13:40:03 2022 -0300
+
+    Criando meu módulo de auth para desenvolver a logica de login com o backend
+
+[33mcommit 363ea09a8102e26db7d1c12c1e0206920ebd5135[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue May 24 23:36:23 2022 -0300
+
+    Criando o modulo auth
+
+[33mcommit 47cff030c9fdf1f679c96b62580af673a57aa874[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 23 02:08:48 2022 -0300
+
+    Criando rotas para get e post de invoice e status. Relacionando com o devie cada um e testando as requisiçoes
+
+[33mcommit 2fd5a7a6294884f7281347882ff3c84daa78a9cc[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Sun May 22 22:02:01 2022 -0300
+
+    Criando serviço location
+
+[33mcommit 3f4f963a5c72a27e2f2a89d5345a260276ec714b[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Sat May 21 20:50:31 2022 -0300
+
+    Adicionando comentario teste
+
+[33mcommit 66af79c7a862932321559f4cd423d9b6ac3d8225[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Fri May 20 22:18:41 2022 -0300
+
+     Iniciando um serciço de location
+
+[33mcommit fa033422a0960ad7ff7dbd199325ce40f90b802c[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Fri May 20 17:37:26 2022 -0300
+
+    Adicionando as entidades finais e fazendo a relaçao
+
+[33mcommit 2bc86e6c8dd7894f8bfab9ebfec9310385882228[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Fri May 20 15:43:09 2022 -0300
+
+    Criaçao das tabelas category, source, status e relaçao com a device.
+
+[33mcommit b1efe1f307b1181ceedad42ca62655b76dea2ee8[m
+Merge: 652bd7a dd636d1
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Thu May 19 23:28:08 2022 -0300
+
+    Testando inserçao no banco. Antes nao interpretava e criava as tabelas no banco, dar um build resolveu o problema.
+
+[33mcommit 652bd7a4ee9c73d0e8534238395903a4ceb9b959[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Thu May 19 16:22:46 2022 -0300
+
+    Correçao de de sintaxe e tipo do config.
+
+[33mcommit dd636d17160b1616f52a0a8ba9a8abc102d26a1c[m
+Merge: 8ca6fcd 66768dd
+Author: lWolgrand <67397900+lWolgrand@users.noreply.github.com>
+Date:   Thu May 19 16:20:04 2022 -0300
+
+    Merge pull request #1 from Arthuralentejo/arthur
+    
+    Arthur
+
+[33mcommit 66768dd428a1f1c4bf4dc5a4d83b58e524810104[m
+Author: Arthuralentejo <arthur.alentejo228@gmail.com>
+Date:   Thu May 19 01:33:46 2022 -0300
+
+    Consertando models para ficarem iguais ao script original
+
+[33mcommit 3b6b7e84b0ad77b73d829ba974201da0c47c8bbd[m
+Author: Arthuralentejo <arthur.alentejo228@gmail.com>
+Date:   Thu May 19 01:32:59 2022 -0300
+
+    Consertando conexão com db e criação de models
+
+[33mcommit 133305903957f69fee9356058af9610e460533de[m
+Author: Arthuralentejo <arthur.alentejo228@gmail.com>
+Date:   Thu May 19 01:31:38 2022 -0300
+
+    Limpando pastas
+
+[33mcommit 8ca6fcd510fb75ea2876033e8077ff835dafe64a[m
+Merge: d66e11f 91aabda
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Wed May 18 20:15:06 2022 -0300
+
+    Wtf
+
+[33mcommit d66e11fa8d03ff9029626c9f9eaa71a3b79bc954[m[33m ([m[1;32mls[m[33m)[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Wed May 18 20:10:58 2022 -0300
+
+    Erro na hora de relacionar tabela e na hora de criar tabela no banco.
+
+[33mcommit 61cb75d770fae8a8d66acd4088117eae15f14d67[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Wed May 18 20:08:12 2022 -0300
+
+    configurando ainda sequelize
+
+[33mcommit 91aabda7f0840c07cfe7820f1f1a304a75bbecb7[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Wed May 11 19:19:47 2022 -0300
+
+    Erros causados por conta de relação de tabelas, não cria as outras tabelas.
+
+[33mcommit b384ed7b6a8333239401935bccf0a133c4a9eea3[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Wed May 11 15:48:38 2022 -0300
+
+    Reorganizando conexão com banco de dados e iniciando relação com chaves estrangeiras.
+
+[33mcommit f2af3a669ffe9887a646d554edb663168f7987fb[m
+Merge: f72e0bd e961774
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue May 10 14:52:58 2022 -0300
+
+    Configurando server e organizando arquitetura de pastas
+
+[33mcommit f72e0bd49bb29c990124e6d197b5a0cf8b9a178a[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Tue May 10 14:51:31 2022 -0300
+
+    Configurando o server e limpando arquitetura do projeto.
+
+[33mcommit e961774bcf4ced03f48e4e32ce70cac322bc64e3[m
+Author: lWolgrand <lopeswolgrand@gmail.com>
+Date:   Thu May 5 14:14:24 2022 -0300
+
+    Pasta path database/data criado para mapeamento do docker.
+
+[33mcommit d34e9d96c30ec0fbb0dafba40cdf59eed6eba1ec[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Tue May 3 22:08:30 2022 -0300
+
+    Finalizando conexão com banco de dados e testando rotas no postman
+
+[33mcommit ff1cafc53dd78a05c0542eefb8238d0619701131[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Tue May 3 00:11:49 2022 -0300
+
+     Mapeando docker-compose e conectando no dbeaver.
+
+[33mcommit b9d05fbe3bcb76004cbd30f3307cc43e3743977e[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Mon May 2 20:15:23 2022 -0300
+
+    Criando as entidades
+
+[33mcommit 4a467acd3328859c8aa731309cfa5292ae9fbf62[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Sat Apr 30 17:19:26 2022 -0300
+
+    Verificando devices.providers
+
+[33mcommit c89e628f41d61152035365b990b160b087ce2be6[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Sat Apr 30 14:50:28 2022 -0300
+
+    Resolvendo sintaxe de import do FS, organizando estrutura da app.controller, app.service e device.module. Agora iniciar a criação do DTO parao Device.
+
+[33mcommit 9df3d0edb9edea394cef6dd29ea6d01ee9ba0437[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Sat Apr 30 10:07:47 2022 -0300
+
+    perdendo a cabeça com o Sequelize
+
+[33mcommit a1761619d4fc5e740bf9343785ab5cbddf45ea31[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Fri Apr 29 19:24:09 2022 -0300
+
+    Adicionando DeviceController e DeviceService na app.module e editando o campo do sequelize com as credenciais.
+
+[33mcommit 2891b8ad0418809018da70c47b9054156e127058[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Fri Apr 29 19:05:10 2022 -0300
+
+    Criando arquivo .sql com a estrutura completa do banco de dados e mais uma inserção de teste. Utilizando um postgres na porta 5432 de um postgres e conectando no Dbeaver para executar Queryes e testar inserção de dados.
+
+[33mcommit 72b844f77a147fd67152846cc2f344c370108710[m
+Author: Lopes <lopeswolgrand@gmail.com>
+Date:   Fri Apr 29 18:45:50 2022 -0300
+
+    montando docker-composer
+
+[33mcommit f1d7ee6308a6de6ef9c986f8d39411b99ec8a486[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Thu Apr 28 05:23:57 2022 -0300
+
+    Configurando dotenv e config.ts
+
+[33mcommit fb8b845012fc6cf537d34a3d9c33495fd314ffa7[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Thu Apr 28 02:35:50 2022 -0300
+
+    iniciando a criação de models, config e seeders utilizando sequelize
+
+[33mcommit 48b784062af7d6953a3e7d4ced300a2278751089[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Thu Apr 28 02:21:46 2022 -0300
+
+    Instalando sequelize e pg, iniciando uma conexão com o banco usando um docker run na porta 5432.
+
+[33mcommit 415dae6c9e08f954d40cb55792431faddc2e24ee[m
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Wed Apr 27 16:28:49 2022 -0300
+
+    Configurando ambientação e iniciando as entidades
+
+[33mcommit 6bd5fbede4af6b07f6f7e0e35dc3b41995ece2b5[m
+Merge: 4052f51 6074f57
+Author: Wolgrand Lopes <lopeswolgrand@gmail.com>
+Date:   Wed Apr 27 14:29:45 2022 -0300
+
+    Configuração de branches (merge)
+
+[33mcommit 4052f512b971d75b191428f57323697d03c3e0e2[m
+Author: lWolgrand <67397900+lWolgrand@users.noreply.github.com>
+Date:   Thu Apr 21 02:08:21 2022 -0300
+
+    Initial commit
+
+[33mcommit 6074f57f0bb96e7ec24561f717c1aeb91a6230b1[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: lWolgrand <lopeswolgrand@gmail.com>
+Date:   Thu Apr 21 02:05:56 2022 -0300
+
+    Estoque inicial
