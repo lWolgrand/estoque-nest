@@ -12,7 +12,11 @@ export const dbproviders = [
   {
     provide: "SEQUELIZE",
     useFactory: async () => {
-      const sequelize = new Sequelize({...dbConfig.development, define: {
+      const sequelize = new Sequelize({...dbConfig.development, ssl: true, dialectOptions: {
+        "ssl": {
+           "require": true
+        }
+      },define: {
         freezeTableName: true,
         timestamps: false
       }} as SequelizeOptions);
