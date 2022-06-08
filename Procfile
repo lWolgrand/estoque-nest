@@ -1,1 +1,1 @@
-web: npm run start:prod npm run seed
+web: npm run start:prod 
