@@ -14,7 +14,8 @@ export const dbproviders = [
     useFactory: async () => {
       const sequelize = new Sequelize({...dbConfig.development, ssl: true, dialectOptions: {
         "ssl": {
-           "require": true
+           "require": true,
+           "rejectUnauthorized": false
         }
       },define: {
         freezeTableName: true,
